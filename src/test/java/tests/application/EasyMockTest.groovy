@@ -1,10 +1,11 @@
-package tests
+package tests.application
 
 
 import org.apache.dubbo.config.ApplicationConfig
 import org.apache.dubbo.config.ReferenceConfig
 import org.apache.dubbo.config.RegistryConfig
 import spock.lang.*
+import tests.HelloService
 
 /**
  * @author shengchaojie
