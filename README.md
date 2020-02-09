@@ -32,7 +32,7 @@ easymock.tests.HelloService.hello=true
 
 ### 3. mock服务-请求约束
 
-本框架对mock服务器不做限制，但是需要遵循以下约束
+本框架对mock服务器不做限制，但是发送的mock请求需要遵循以下约束
 1. 请求类型为GET，请求path为/接口全限定名/方法名
 2. 返回格式为json  
 对于基本类型，把xxx替换即可
