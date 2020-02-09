@@ -31,3 +31,21 @@ easymock.tests.HelloService.hello=true
 ```
 
 3. mock服务-请求约束
+本框架对mock服务器不做限制，但是需要遵循以下约束
+1. 请求类型为GET，请求path为/接口全限定名/方法名
+2. 返回格式为json  
+对于基本类型，把xxx替换即可
+```
+{
+    "data":xxx
+}
+```
+对于其他类型，比如对象,Map,Collection等其他类型,与FastJson生成的一致即可
+
+mock服务器推荐 [easy-mock](https://github.com/easy-mock/easy-mock)或者[mockserver](https://github.com/mock-server/mockserver)这两个项目
+
+## 示例工程
+
+
+## 相关文章
+[针对Dubbo接口Mock的解决方案](https://www.jianshu.com/p/d71c7771b9c9)
