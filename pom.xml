@@ -53,6 +53,7 @@
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-client</artifactId>
             <version>4.0.1</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
