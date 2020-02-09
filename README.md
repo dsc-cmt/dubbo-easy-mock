@@ -46,7 +46,7 @@ easymock.tests.HelloService.hello=true
 mock服务器推荐 [easy-mock](https://github.com/easy-mock/easy-mock)或者[mockserver](https://github.com/mock-server/mockserver)这两个项目
 
 ## 示例工程
-
+[dubbo-easy-mock-demo](https://github.com/shengchaojie/dubbo-easy-mock-demo)
 
 ## 相关文章
 [针对Dubbo接口Mock的解决方案](https://www.jianshu.com/p/d71c7771b9c9)
