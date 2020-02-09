@@ -8,7 +8,7 @@
 ![](img/principle.jpg)
 
 ## 使用
-1. 添加依赖
+### 1. 添加依赖
 mvn clean package install -Dmaven.test.skip=true
 ```xml
 <dependency>
@@ -18,7 +18,7 @@ mvn clean package install -Dmaven.test.skip=true
     </dependency>
 ```
 
-2. classpath增加mock.properties
+### 2. classpath增加mock.properties
 ```
 ## 是否启用mock
 easymock.enable=true
@@ -30,7 +30,8 @@ easymock.tests.HelloService=true
 easymock.tests.HelloService.hello=true
 ```
 
-3. mock服务-请求约束
+### 3. mock服务-请求约束
+
 本框架对mock服务器不做限制，但是需要遵循以下约束
 1. 请求类型为GET，请求path为/接口全限定名/方法名
 2. 返回格式为json  
