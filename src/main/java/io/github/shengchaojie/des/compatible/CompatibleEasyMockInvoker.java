@@ -7,11 +7,15 @@ import com.alibaba.dubbo.rpc.Invoker;
 import com.alibaba.dubbo.rpc.Result;
 import com.alibaba.dubbo.rpc.RpcException;
 import com.alibaba.dubbo.rpc.cluster.Directory;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author shengchaojie
  * @date 2019-06-17
  **/
+@Slf4j
 public class CompatibleEasyMockInvoker<T> implements Invoker<T> {
 
     private final Directory<T> directory;

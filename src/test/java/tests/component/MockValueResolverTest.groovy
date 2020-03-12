@@ -5,6 +5,7 @@ import com.alibaba.fastjson.TypeReference
 import io.github.shengchaojie.des.MockValueResolver
 import io.github.shengchaojie.des.PrimitiveWrapper
 import spock.lang.Specification
+import tests.model.QueryCurNeedRepayResponse
 import tests.model.Result
 
 /**
@@ -32,6 +33,22 @@ class MockValueResolverTest extends Specification {
         new Result<Integer>(123)                              | Result | new TypeReference<Result<Integer>>() {}.type
         new Result<Result<Integer>>(new Result<Integer>(123)) | Result | new TypeReference<Result<Result<Integer>>>() {
         }.type
+    }
+
+    def "test  Object"(){
+        given:
+        String s = "{\n" +
+                "  \"code\": \"10000\",\n" +
+                "  \"interest\": 1,\n" +
+                "  \"msg\": \"成功\",\n" +
+                "  \"principal\": 0,\n" +
+                "  \"success\": true,\n" +
+                "  \"totalAmount\": 0\n" +
+                "}";
+        when:
+        def value = MockValueResolver.resolve(s, QueryCurNeedRepayResponse.class, null)
+        then:
+        Objects.equals(value, originValue)
     }
 
 
