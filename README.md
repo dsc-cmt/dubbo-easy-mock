@@ -1,15 +1,15 @@
-> ½öÖ§³Ödubbo2.7ºó°æ±¾
-## Õâ¸ö¿ò¼ÜµÄ×÷ÓÃ
-ÔÚ×Ô¶¯²âÊÔÖĞ£¬Õë¶Ôdubbo½Ó¿Ú½øĞĞmockµÄ¿ò¼Ü
+> ä»…æ”¯æŒdubbo2.7åç‰ˆæœ¬
+## è¿™ä¸ªæ¡†æ¶çš„ä½œç”¨
+åœ¨è‡ªåŠ¨æµ‹è¯•ä¸­ï¼Œé’ˆå¯¹dubboæ¥å£è¿›è¡Œmockçš„æ¡†æ¶
 
-## Ô­Àí
-ÀûÓÃdubboµÄÀ©Õ¹µã×Ô¶¯°ü×°£¬Í¨¹ıEasyMockClusterWrapper½«Ô­±¾µÄrpcÇëÇó¸ÄĞ´ÎªhttpÇëÇó×ª·¢µ½mock·şÎñÆ÷·µ»ØÎÒÃÇ¶ÔÓ¦mock½á¹û
+## åŸç†
+åˆ©ç”¨dubboçš„æ‰©å±•ç‚¹è‡ªåŠ¨åŒ…è£…ï¼Œé€šè¿‡EasyMockClusterWrapperå°†åŸæœ¬çš„rpcè¯·æ±‚æ”¹å†™ä¸ºhttpè¯·æ±‚è½¬å‘åˆ°mockæœåŠ¡å™¨è¿”å›æˆ‘ä»¬å¯¹åº”mockç»“æœ
 
 ![](img/principle.jpg)
 
-## Ê¹ÓÃ
-### 1. Ìí¼ÓÒÀÀµ
-mvn clean package install -Dmaven.test.skip=true ±àÒë°²×°ÒÀÀµµ½±¾µØ/Ô¶³Ì²Ö¿â
+## ä½¿ç”¨
+### 1. æ·»åŠ ä¾èµ–
+mvn clean package install -Dmaven.test.skip=true ç¼–è¯‘å®‰è£…ä¾èµ–åˆ°æœ¬åœ°/è¿œç¨‹ä»“åº“
 ```xml
 <dependency>
     <groupId>io.github.shengchaojie</groupId>
@@ -18,35 +18,35 @@ mvn clean package install -Dmaven.test.skip=true ±àÒë°²×°ÒÀÀµµ½±¾µØ/Ô¶³Ì²Ö¿â
 </dependency>
 ```
 
-### 2. classpathÔö¼Ómock.properties
+### 2. classpathå¢åŠ mock.properties
 ```
-## ÊÇ·ñÆôÓÃmock
+## æ˜¯å¦å¯ç”¨mock
 easymock.enable=true
-## mock·şÎñÆ÷µØÖ·
+## mockæœåŠ¡å™¨åœ°å€
 easymock.server.url=https://easy-mock.com/mock/5c77afd53ecfbb573cba5df8/test
-## ½Ó¿Ú¼¶±ğmock¿ª¹Ø 
+## æ¥å£çº§åˆ«mockå¼€å…³ 
 easymock.tests.HelloService=true
-## ·½·¨¼¶±ğmock¿ª¹Ø,ÓÅÏÈ¼¶´óÓÚ½Ó¿Ú¼¶±ğ
+## æ–¹æ³•çº§åˆ«mockå¼€å…³,ä¼˜å…ˆçº§å¤§äºæ¥å£çº§åˆ«
 easymock.tests.HelloService.hello=true
 ```
 
-### 3. mock·şÎñ-ÇëÇóÔ¼Êø
+### 3. mockæœåŠ¡-è¯·æ±‚çº¦æŸ
 
-±¾¿ò¼Ü¶Ômock·şÎñÆ÷²»×öÏŞÖÆ£¬µ«ÊÇ·¢ËÍµÄmockÇëÇóĞèÒª×ñÑ­ÒÔÏÂÔ¼Êø
-1. ÇëÇóÀàĞÍÎªGET£¬ÇëÇópathÎª/½Ó¿ÚÈ«ÏŞ¶¨Ãû/·½·¨Ãû
-2. ·µ»Ø¸ñÊ½Îªjson  
-¶ÔÓÚ»ù±¾ÀàĞÍ£¬ÒòÎªjson½öÖ§³Ö¶ÔÏóºÍÊı×éÁ½ÖÖ½á¹¹£¬ËùÒÔĞèÒªÓÃÒÔÏÂ¸ñÊ½Ç¶Ì×Ò»²ã
+æœ¬æ¡†æ¶å¯¹mockæœåŠ¡å™¨ä¸åšé™åˆ¶ï¼Œä½†æ˜¯å‘é€çš„mockè¯·æ±‚éœ€è¦éµå¾ªä»¥ä¸‹çº¦æŸ
+1. è¯·æ±‚ç±»å‹ä¸ºGETï¼Œè¯·æ±‚pathä¸º/æ¥å£å…¨é™å®šå/æ–¹æ³•å
+2. è¿”å›æ ¼å¼ä¸ºjson  
+å¯¹äºåŸºæœ¬ç±»å‹ï¼Œå› ä¸ºjsonä»…æ”¯æŒå¯¹è±¡å’Œæ•°ç»„ä¸¤ç§ç»“æ„ï¼Œæ‰€ä»¥éœ€è¦ç”¨ä»¥ä¸‹æ ¼å¼åµŒå¥—ä¸€å±‚
 ```
 {
     "data":xxx
 }
 ```
-¶ÔÓÚÆäËûÀàĞÍ£¬±ÈÈç¶ÔÏó,Map,CollectionµÈÆäËûÀàĞÍ,ÓëFastJsonÉú³ÉµÄÒ»ÖÂ¼´¿É
+å¯¹äºå…¶ä»–ç±»å‹ï¼Œæ¯”å¦‚å¯¹è±¡,Map,Collectionç­‰å…¶ä»–ç±»å‹,ä¸FastJsonç”Ÿæˆçš„ä¸€è‡´å³å¯
 
-mock·şÎñÆ÷ÍÆ¼ö [easy-mock](https://github.com/easy-mock/easy-mock)»òÕß[mockserver](https://github.com/mock-server/mockserver)ÕâÁ½¸öÏîÄ¿
+mockæœåŠ¡å™¨æ¨è [easy-mock](https://github.com/easy-mock/easy-mock)æˆ–è€…[mockserver](https://github.com/mock-server/mockserver)è¿™ä¸¤ä¸ªé¡¹ç›®
 
-## Ê¾Àı¹¤³Ì
+## ç¤ºä¾‹å·¥ç¨‹
 [dubbo-easy-mock-demo](https://github.com/dsc-cmt/dubbo-easy-mock-demo)
 
-## Ïà¹ØÎÄÕÂ
-[Õë¶ÔDubbo½Ó¿ÚMockµÄ½â¾ö·½°¸](https://www.jianshu.com/p/d71c7771b9c9)
+## ç›¸å…³æ–‡ç« 
+[é’ˆå¯¹Dubboæ¥å£Mockçš„è§£å†³æ–¹æ¡ˆ](https://www.jianshu.com/p/d71c7771b9c9)

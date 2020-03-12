@@ -1,8 +1,8 @@
 package io.github.shengchaojie.des;
 
+import io.github.shengchaojie.des.util.ConfigUtils;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.common.utils.ConfigUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -41,7 +41,7 @@ public class MockConfig {
             }else if(key.startsWith("easymock.")){
                 interfaceMockConfig.put(key.substring(9),"true".equals(value));
             }else{
-                log.info("ÎŞĞ§ÅäÖÃÏî:key={},value={}",key,value);
+                log.info("æ— æ•ˆé…ç½®é¡¹:key={},value={}",key,value);
             }
         }
     }

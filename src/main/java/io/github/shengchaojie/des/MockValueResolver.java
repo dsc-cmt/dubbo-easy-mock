@@ -18,15 +18,15 @@ public class MockValueResolver {
 
         Object value = null;
         if (ClassHelper.isPrimitive((Class<?>) type)) {
-            //´¦ÀíÄÚÖÃÀàĞÍ
-            //½â¾öeasymock²»Ö§³Ö»ù±¾ÀàĞÍ·µ»ØµÄÎÊÌâ
+            //å¤„ç†å†…ç½®ç±»å‹
+            //è§£å†³easymockä¸æ”¯æŒåŸºæœ¬ç±»å‹è¿”å›çš„é—®é¢˜
             PrimitiveWrapper primitiveWrapper = JSON.parseObject(mockValue, PrimitiveWrapper.class);
             value = JSON.parseObject(primitiveWrapper.getData().toString(),type);
         } else if (mockValue.startsWith("{") || mockValue.startsWith("[")) {
-            //´¦ÀíÆÕÍ¨¶ÔÏó
+            //å¤„ç†æ™®é€šå¯¹è±¡
             value = JSON.parseObject(mockValue, genericType!=null?genericType:type);
         } else {
-            // TODO: 2020-02-08 ×ßµ½Õâ±ß´ú±í³ö´íÁË ¿¼ÂÇ´íÎóÈçºÎ´¦Àí
+            // TODO: 2020-02-08 èµ°åˆ°è¿™è¾¹ä»£è¡¨å‡ºé”™äº† è€ƒè™‘é”™è¯¯å¦‚ä½•å¤„ç†
             value = mockValue;
         }
 
