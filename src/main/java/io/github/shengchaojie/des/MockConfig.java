@@ -22,7 +22,6 @@ public class MockConfig {
 
     private static final String REQUEST_URL_FORMAT = "%s/%s/%s";
 
-    @Getter
     private Boolean enable;
 
     @Getter
@@ -44,6 +43,10 @@ public class MockConfig {
                 log.info("无效配置项:key={},value={}",key,value);
             }
         }
+    }
+
+    public Boolean isMockEnable(){
+        return Optional.ofNullable(enable).orElse(false);
     }
 
     public Boolean isInterfaceMockEnable(String interfaceName){

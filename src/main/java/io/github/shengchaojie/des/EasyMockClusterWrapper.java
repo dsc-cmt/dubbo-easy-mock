@@ -23,7 +23,7 @@ public class EasyMockClusterWrapper implements Cluster {
     @Override
     public <T> Invoker<T> join(Directory<T> directory) throws RpcException {
         //防御性前置判断
-        if(MockConfig.INSTANCE.getEnable()) {
+        if(MockConfig.INSTANCE.isMockEnable()) {
             return new EasyMockInvoker<>(directory, this.cluster.join(directory));
         }
 

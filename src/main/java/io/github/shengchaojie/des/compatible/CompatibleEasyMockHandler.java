@@ -23,7 +23,7 @@ public class CompatibleEasyMockHandler<T> {
 
     public static <T> Result invoke(Invoker<T> invoker, Invocation invocation, String interfaceName, String methodName) {
         //mock总开关
-        if (!MockConfig.INSTANCE.getEnable()) {
+        if (!MockConfig.INSTANCE.isMockEnable()) {
             return invoker.invoke(invocation);
         }
 

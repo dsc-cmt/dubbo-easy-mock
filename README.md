@@ -1,4 +1,3 @@
-> 仅支持dubbo2.7后版本
 ## 这个框架的作用
 在自动测试中，针对dubbo接口进行mock的框架
 
@@ -44,6 +43,9 @@ easymock.tests.HelloService.hello=true
 对于其他类型，比如对象,Map,Collection等其他类型,与FastJson生成的一致即可
 
 mock服务器推荐 [easy-mock](https://github.com/easy-mock/easy-mock)或者[mockserver](https://github.com/mock-server/mockserver)这两个项目
+
+## 更新
+2020-03-12 - 兼容apache和alibaba版本的dubbo
 
 ## 示例工程
 [dubbo-easy-mock-demo](https://github.com/dsc-cmt/dubbo-easy-mock-demo)
