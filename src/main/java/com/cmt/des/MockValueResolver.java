@@ -1,7 +1,7 @@
-package io.github.shengchaojie.des;
+package com.cmt.des;
 
 import com.alibaba.fastjson.JSON;
-import io.github.shengchaojie.des.util.ClassHelper;
+import com.cmt.des.util.ClassHelper;
 
 import java.lang.reflect.Type;
 

@@ -1,6 +1,6 @@
-package io.github.shengchaojie.des;
+package com.cmt.des;
 
-import io.github.shengchaojie.des.util.ConfigUtils;
+import com.cmt.des.util.ConfigUtils;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 

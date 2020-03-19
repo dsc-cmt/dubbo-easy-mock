@@ -1,4 +1,4 @@
-package io.github.shengchaojie.des.util;
+package com.cmt.des.util;
 
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;

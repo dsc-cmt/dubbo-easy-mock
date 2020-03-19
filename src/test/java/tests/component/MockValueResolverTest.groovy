@@ -2,8 +2,8 @@ package tests.component
 
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.TypeReference
-import io.github.shengchaojie.des.MockValueResolver
-import io.github.shengchaojie.des.PrimitiveWrapper
+import com.cmt.des.MockValueResolver
+import com.cmt.des.PrimitiveWrapper
 import spock.lang.Specification
 import tests.model.QueryCurNeedRepayResponse
 import tests.model.Result

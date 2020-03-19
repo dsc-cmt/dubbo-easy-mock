@@ -1,4 +1,4 @@
-package io.github.shengchaojie.des.compatible;
+package com.cmt.des.compatible;
 
 import com.alibaba.dubbo.rpc.Result;
 

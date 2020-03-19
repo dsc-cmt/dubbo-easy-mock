@@ -1,4 +1,4 @@
-package io.github.shengchaojie.des;
+package com.cmt.des;
 
 import org.apache.dubbo.rpc.Invoker;
 import org.apache.dubbo.rpc.RpcException;

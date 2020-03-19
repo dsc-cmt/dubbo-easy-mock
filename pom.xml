@@ -6,7 +6,7 @@
 
     <groupId>io.github.shengchaojie</groupId>
     <artifactId>dubbo-easy-mock</artifactId>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>1.1.0</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -95,7 +95,6 @@
             <groupId>org.spockframework</groupId>
             <artifactId>spock-core</artifactId>
             <version>1.2-groovy-2.4</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 

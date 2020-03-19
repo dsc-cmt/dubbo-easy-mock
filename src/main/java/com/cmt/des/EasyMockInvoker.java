@@ -1,28 +1,24 @@
-package io.github.shengchaojie.des.compatible;
+package com.cmt.des;
 
 
-import com.alibaba.dubbo.common.URL;
-import com.alibaba.dubbo.rpc.Invocation;
-import com.alibaba.dubbo.rpc.Invoker;
-import com.alibaba.dubbo.rpc.Result;
-import com.alibaba.dubbo.rpc.RpcException;
-import com.alibaba.dubbo.rpc.cluster.Directory;
-import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.dubbo.common.URL;
+import org.apache.dubbo.rpc.Invocation;
+import org.apache.dubbo.rpc.Invoker;
+import org.apache.dubbo.rpc.Result;
+import org.apache.dubbo.rpc.RpcException;
+import org.apache.dubbo.rpc.cluster.Directory;
 
 /**
  * @author shengchaojie
  * @date 2019-06-17
  **/
-@Slf4j
-public class CompatibleEasyMockInvoker<T> implements Invoker<T> {
+public class EasyMockInvoker<T> implements Invoker<T> {
 
     private final Directory<T> directory;
 
     private final Invoker<T> invoker;
 
-    public CompatibleEasyMockInvoker(Directory<T> directory, Invoker<T> invoker) {
+    public EasyMockInvoker(Directory<T> directory, Invoker<T> invoker) {
         this.directory = directory;
         this.invoker = invoker;
     }
@@ -36,7 +32,7 @@ public class CompatibleEasyMockInvoker<T> implements Invoker<T> {
     public Result invoke(Invocation invocation) throws RpcException {
         String interfaceName = invoker.getInterface().getCanonicalName();
         String methodName = invocation.getMethodName();
-        return CompatibleEasyMockHandler.invoke(invoker, invocation, interfaceName, methodName);
+        return EasyMockHandler.invoke(invoker, invocation, interfaceName, methodName);
     }
 
     @Override

@@ -1,13 +1,13 @@
-package io.github.shengchaojie.des.compatible;
+package com.cmt.des.compatible;
 
 import com.alibaba.dubbo.rpc.Invocation;
 import com.alibaba.dubbo.rpc.Invoker;
 import com.alibaba.dubbo.rpc.Result;
 import com.alibaba.fastjson.JSON;
-import io.github.shengchaojie.des.MockConfig;
-import io.github.shengchaojie.des.MockValueResolver;
-import io.github.shengchaojie.des.util.ClassHelper;
-import io.github.shengchaojie.des.util.HttpUtil;
+import com.cmt.des.MockConfig;
+import com.cmt.des.MockValueResolver;
+import com.cmt.des.util.ClassHelper;
+import com.cmt.des.util.HttpUtil;
 import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.Type;

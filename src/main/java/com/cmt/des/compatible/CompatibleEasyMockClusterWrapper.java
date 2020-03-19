@@ -1,10 +1,10 @@
-package io.github.shengchaojie.des.compatible;
+package com.cmt.des.compatible;
 
 import com.alibaba.dubbo.rpc.Invoker;
 import com.alibaba.dubbo.rpc.RpcException;
 import com.alibaba.dubbo.rpc.cluster.Cluster;
 import com.alibaba.dubbo.rpc.cluster.Directory;
-import io.github.shengchaojie.des.MockConfig;
+import com.cmt.des.MockConfig;
 
 
 /**

@@ -8,15 +8,17 @@
 
 ## 使用
 ### 1. 添加依赖
-mvn clean package install -Dmaven.test.skip=true 编译安装依赖到本地/远程仓库
+mvn clean package install (deploy) -Dmaven.test.skip=true 编译安装依赖到本地/远程仓库
+
+对于apache版本dubbo 
+
 ```xml
 <dependency>
-    <groupId>io.github.shengchaojie</groupId>
+    <groupId>com.cmt</groupId>
     <artifactId>dubbo-easy-mock</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.1.0</version>
 </dependency>
 ```
-
 ### 2. classpath增加mock.properties
 ```
 ## 是否启用mock

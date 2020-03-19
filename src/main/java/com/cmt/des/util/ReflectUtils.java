@@ -1,4 +1,4 @@
-package io.github.shengchaojie.des.util;
+package com.cmt.des.util;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
