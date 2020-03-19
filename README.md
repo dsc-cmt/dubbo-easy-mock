@@ -1,3 +1,4 @@
+![Build Status](https://travis-ci.org/dsc-cmt/dubbo-easy-mock.svg?branch=master)
 ## 这个框架的作用
 在自动测试中，针对dubbo接口进行mock的框架
 
